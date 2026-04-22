@@ -38,11 +38,23 @@ Trained on:
 
 ---
 
-## 📊 Key Insight
+## 📊 Model Performance (Multi-Domain Evaluation)
 
-This project demonstrates that **domain diversity in training data significantly improves NLP model generalization**.
+The model was evaluated across three datasets to measure generalization across different text domains.
 
-Single-domain training leads to overfitting on specific linguistic patterns, while multi-domain training creates a more adaptable sentiment classifier for real-world use cases.
+| Dataset | Precision | Recall | F1 Score | Accuracy |
+|----------|----------|--------|----------|----------|
+| IMDB     | 0.85     | 0.86   | 0.86     | 0.86     |
+| Amazon   | 0.95     | 0.95   | 0.95     | 0.95     |
+| Yelp     | 0.93     | 0.94   | 0.93     | 0.93     |
+
+---
+
+## 📌 Key Insight
+
+- The model performs **best on Amazon and Yelp datasets**, showing strong generalization on product and service reviews.
+- Performance on IMDB is slightly lower, indicating domain-specific variation in movie review sentiment patterns.
+- Overall results demonstrate that **multi-domain training significantly improves robustness compared to single-domain models**.
 
 ---
 
