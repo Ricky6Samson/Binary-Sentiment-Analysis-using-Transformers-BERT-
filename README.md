@@ -104,7 +104,6 @@ Deployed using **Hugging Face Spaces (Gradio)** for real-time inference and publ
 * Introduce neutral sentiment class
 * Improve sarcasm and irony detection
 * Expand dataset diversity further
-* Experiment with larger transformer architectures (RoBERTa, DeBERTa)
 
 ---
 
