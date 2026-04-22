@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo
 
-👉 Hugging Face Space: [](https://huggingface.co/spaces/ricky-samson/binary-sentiment-classifier)
+👉 Hugging Face Space: https://huggingface.co/spaces/ricky-samson/binary-sentiment-classifier
 
 ---
 
