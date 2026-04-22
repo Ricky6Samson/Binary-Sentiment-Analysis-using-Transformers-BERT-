@@ -1,52 +1,48 @@
-# Sentiment Analysis using BERT (Multi-Domain)
+# 📌 Sentiment Analysis using BERT (Multi-Domain)
+
+## 🚀 Live Demo
+
+👉 Hugging Face Space: [](https://huggingface.co/spaces/ricky-samson/binary-sentiment-classifier)
+
+---
 
 ## 📌 Overview
 
-This project implements a **Transformer-based sentiment analysis system** using BERT for binary classification (**Positive / Negative**).
+This project implements a **Transformer-based sentiment analysis system using BERT**, designed to classify text as **Positive or Negative**.
 
-The project evolved from an initial single-domain model to a more robust **multi-domain model**, improving performance on real-world, diverse text inputs.
-
----
-
-## 🚀 Features
-
-* BERT-based sentiment classification
-* Binary output: Positive / Negative
-* Gradio web interface for real-time predictions
-* Improved generalization using multi-domain training
-* Ready for deployment on Hugging Face Spaces
+The model was initially trained on a single dataset (IMDB) and later improved using a **multi-domain training strategy (IMDB + Amazon + Yelp)** to enhance real-world robustness and generalization.
 
 ---
 
-## 🧠 Model Development Journey
+## 🧠 Key Improvement: Single-Domain → Multi-Domain Learning
 
-### 1. Initial Approach — IMDB-Only Model
+### ❌ Initial Model (IMDB Only)
 
-* Trained exclusively on IMDB movie reviews
-* Performed well on movie-related text
-* Showed **inconsistent predictions on general reviews** (e.g., products, services)
+* Strong performance on movie reviews
+* Weak generalization on product and service reviews
+* Struggled with real-world diverse text inputs
 
-### 2. Improved Approach — Multi-Domain Model
+### ✅ Final Model (Multi-Domain)
 
-* Trained on a combination of:
+Trained on:
 
-  * IMDB (movie reviews)
-  * Amazon (product reviews)
-  * Yelp (service reviews)
-* Result:
+* IMDB (movie reviews)
+* Amazon (product reviews)
+* Yelp (service reviews)
 
-  * More **stable and consistent predictions**
-  * Better handling of **diverse real-world inputs**
+**Outcome:**
+
+* Improved robustness across different domains
+* More stable predictions on real-world text
+* Better generalization beyond movie reviews
 
 ---
 
 ## 📊 Key Insight
 
-This project highlights the impact of domain diversity in training data.
+This project demonstrates that **domain diversity in training data significantly improves NLP model generalization**.
 
-* Single-domain models may struggle when applied to different types of text
-* Multi-domain training improves robustness and generalization
-* Real-world NLP systems benefit from **diverse data sources**
+Single-domain training leads to overfitting on specific linguistic patterns, while multi-domain training creates a more adaptable sentiment classifier for real-world use cases.
 
 ---
 
@@ -54,7 +50,7 @@ This project highlights the impact of domain diversity in training data.
 
 * Python
 * PyTorch
-* Hugging Face Transformers
+* Hugging Face Transformers (BERT)
 * Gradio
 
 ---
@@ -64,10 +60,10 @@ This project highlights the impact of domain diversity in training data.
 ```
 sentiment-transformer/
 │
-├── app.py              # Gradio app for inference
-├── requirements.txt   # Dependencies
-├── model/             # Trained model + tokenizer
-└── notebooks/         # Training notebook (optional)
+├── app.py              # Gradio inference app
+├── requirements.txt    # Dependencies
+├── model/              # Trained BERT model + tokenizer
+└── notebooks/          # Training pipeline
 ```
 
 ---
@@ -80,34 +76,38 @@ cd sentiment-transformer
 python app.py
 ```
 
-Then open in browser:
+Then open:
+
+```
 http://127.0.0.1:7860
+```
 
 ---
 
 ## 🌐 Deployment
 
-This project is designed to be deployed using **Gradio on Hugging Face Spaces** for public access.
+Deployed using **Hugging Face Spaces (Gradio)** for real-time inference and public access.
 
 ---
 
 ## ⚠️ Limitations
 
-* Binary classification only (no neutral class)
-* May struggle with sarcasm or highly ambiguous text
-* Not optimized for extremely domain-specific language
+* Binary classification only (Positive / Negative)
+* Limited sarcasm understanding
+* Performance depends on domain similarity to training data
 
 ---
 
 ## 🔮 Future Improvements
 
-* Add neutral sentiment class
-* Improve sarcasm detection
-* Train on larger and more diverse datasets
-* Add confidence scores to predictions
+* Add confidence score visualization
+* Introduce neutral sentiment class
+* Improve sarcasm and irony detection
+* Expand dataset diversity further
+* Experiment with larger transformer architectures (RoBERTa, DeBERTa)
 
 ---
 
-## 📌 Author
+## 👤 Author
 
 Ricky Samson
