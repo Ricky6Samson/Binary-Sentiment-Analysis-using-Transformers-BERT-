@@ -8,6 +8,13 @@ The project evolved from an initial single-domain model to a more robust **multi
 
 ---
 
+## 🌐 Deployment
+
+This project is designed to be deployed using **Gradio on Hugging Face Spaces** for public access.
+Hugging Face Spaces link : https://huggingface.co/spaces/ricky-samson/binary-sentiment-classifier 
+
+---
+
 ## 🚀 Features
 
 * BERT-based sentiment classification
@@ -85,11 +92,7 @@ http://127.0.0.1:7860
 
 ---
 
-## 🌐 Deployment
 
-This project is designed to be deployed using **Gradio on Hugging Face Spaces** for public access.
-
----
 
 ## ⚠️ Limitations
 
