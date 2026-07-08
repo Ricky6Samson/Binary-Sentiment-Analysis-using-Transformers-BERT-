@@ -11,6 +11,7 @@ The project evolved from an initial single-domain model to a more robust **multi
 ## 🌐 Deployment
 
 This project is designed to be deployed using **Gradio on Hugging Face Spaces** for public access.
+
 Hugging Face Spaces link : https://huggingface.co/spaces/ricky-samson/binary-sentiment-classifier 
 
 ---
